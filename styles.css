@@ -36,3 +36,11 @@ nav a {
     padding: 60px 20px;
     text-aling:center;
 }
+
+/* SECCIONES */
+section {
+    padding: 20px;
+    background: white;
+    margin: 15px;
+    border-radius: 5px;
+}

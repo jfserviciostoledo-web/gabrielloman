@@ -29,3 +29,10 @@ nav a {
     text-decoration: none;
     display: inline-block;
 }
+
+.hero{
+    background-color: #444;
+    color:white;
+    padding: 60px 20px;
+    text-aling:center;
+}

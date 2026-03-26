@@ -45,6 +45,13 @@ section {
     border-radius: 5px;
 }
 
+/*footer*/
+footer{
+    background-color:#222;
+    color:white;
+    text-align:center;
+}
+
 /*escritorio*/
 @media (min-width: 1024px) {
     header {

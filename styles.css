@@ -44,3 +44,26 @@ section {
     margin: 15px;
     border-radius: 5px;
 }
+
+/*escritorio*/
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        padding: 15px 40px;
+    }
+    nav {
+        margin-top:0;
+    }
+    .hero{
+        padding: 100px;
+    }
+    section{
+        max-width: 1000px;
+        margin:30px auto;
+    }
+    .img{
+        height:200px;
+    }
+}

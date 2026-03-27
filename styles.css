@@ -1,10 +1,11 @@
-
+/* RESET BÁSICO */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* GENERAL */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -12,13 +13,15 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER */
 header {
-    background-color: #A35C46;
+    background-color: #222;
     color: white;
     padding: 15px;
     text-align: center;
 }
 
+/* NAV */
 nav {
     margin-top: 10px;
 }
@@ -30,11 +33,12 @@ nav a {
     display: inline-block;
 }
 
-.hero{
-    background-color: #CE9C8D;
-    color:white;
+/* HERO */
+.hero {
+    background-color: #444;
+    color: white;
     padding: 60px 20px;
-    text-aling:center;
+    text-align: center;
 }
 
 /* SECCIONES */
@@ -45,67 +49,110 @@ section {
     border-radius: 5px;
 }
 
-.reforma .imagenes {
-    display:flex;
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* PROYECTOS */
+.proyecto{
+    max-width: 950px;
+    margin:0 auto;
+}
+.proyecto .imagenes {
+    display: flex;
     flex-wrap:wrap;
     gap:20px;
 }
 
-.img{
+.img {
     flex: 1 1 45%;
     background: #ccc;
     padding:10px;
     text-align: center;
 }
-
+ 
 .img img {
     width: 100%;
-    height:auto;
-    display:block
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/*formulario*/
-form input,form textarea {
-    width:100%;
-    padding:10px;
-    margin-bottom:10px;
+/* FORMULARIO */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 button {
-    background:#222;
+    background: #222;
     color: white;
     padding: 10px;
     border: none;
     width: 100%;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-/*footer*/
-footer{
-    background-color:#222;
-    color:white;
-    text-align:center;
+/* ========================= */
+/* 📱 TABLET (>= 768px) */
+/* ========================= */
+@media (min-width: 768px) {
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 80px;
+    }
+
+    section {
+        margin: 20px auto;
+        max-width: 700px;
+    }
+
+    .proyecto .imagenes {
+        flex-wrap: nowrap;
+    }
+
+    .img {
+        width: 48%;
+    }
+
+    button {
+        width: auto;
+    }
 }
 
-/*escritorio*/
+/* ========================= */
+/* 💻 ESCRITORIO (>= 1024px) */
+/* ========================= */
 @media (min-width: 1024px) {
+
     header {
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
         padding: 15px 40px;
     }
+
     nav {
-        margin-top:0;
+        margin-top: 0;
     }
-    .hero{
+
+    .hero {
         padding: 100px;
     }
-    section{
+
+    section {
         max-width: 1000px;
-        margin:30px auto;
+        margin: 30px auto;
     }
-    .img{
-        height:200px;
-    }
+
 }

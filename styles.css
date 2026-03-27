@@ -48,16 +48,20 @@ section {
 .reforma .imagenes {
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
+    gap:20px;
 }
 
 .img{
-    background:#ccc;
-    width:50%;
-    height:15px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    flex: 1 1 45%;
+    background: #ccc;
+    padding:10px;
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    height:auto;
+    display:block
 }
 
 /*formulario*/
